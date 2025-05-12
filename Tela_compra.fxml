@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.slocacaov.HelloController">
+    <children>
+        <!-- Banner superior (Tarja verde) -->
+        <HBox alignment="CENTER" layoutY="-6.0" prefHeight="103.0" prefWidth="1280.0" spacing="30.0" style="-fx-background-color: #2cb1c8;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-6.0">
+            <padding>
+                <Insets bottom="10" left="30" right="30" top="10" />
+            </padding>
+            <AnchorPane prefHeight="100.0" prefWidth="1258.0">
+                <children>
+                    <Button layoutX="1092.0" layoutY="29.0" mnemonicParsing="false" text="Fale conosco">
+                        <font>
+                            <Font name="System Bold" size="15.0" />
+                        </font>
+                    </Button>
+                    <Label layoutX="1057.0" layoutY="25.0" prefHeight="40.0" prefWidth="40.0" text="📞">
+                        <font>
+                            <Font size="28.0" />
+                        </font>
+                    </Label>
+
+                    <TextField layoutX="180.0" layoutY="23.0" prefHeight="40.0" prefWidth="322.0" promptText="Procurar Carros 🔍" />
+                    <ImageView fitHeight="73.0" fitWidth="175.0" layoutX="-13.0" layoutY="8.0">
+                        <image>
+                            <Image url="@../../../images/LOGO_AZUL-removebg-preview.png" />
+                        </image>
+                    </ImageView>
+
+                </children>
+            </AnchorPane>
+        </HBox>
+
+        <!-- Conteúdo dos produtos, sem ScrollPane -->
+        <FlowPane hgap="15.0" style="-fx-background-color: #f9f9f9; -fx-padding: 20px;" vgap="15.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="96.0">
+            <children>
+                <!-- Conteúdo dos produtos -->
+                <AnchorPane prefHeight="785.0" prefWidth="1375.0">
+                    <children>
+                        <ImageView fitHeight="739.0" fitWidth="1415.0" layoutX="-21.0" layoutY="-21.0">
+                            <image>
+                                <Image url="@../../../images/bg-steps-new.jpg" />
+                            </image>
+                        </ImageView>
+                        <HBox layoutX="994.0" layoutY="-8.0" prefHeight="383.0" prefWidth="388.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20;" styleClass="-fx padding: 10">
+                            <children>
+                                <AnchorPane prefHeight="383.0" prefWidth="391.0">
+                                    <children>
+                                        <Label layoutX="30.0" layoutY="14.0" prefHeight="36.0" prefWidth="125.0" text="&gt;Retirada:" textFill="#2cb1c8">
+                                            <font>
+                                                <Font name="System Bold" size="20.0" />
+                                            </font>
+                                        </Label>
+                                        <DatePicker layoutX="194.0" layoutY="98.0" prefHeight="31.0" prefWidth="151.0" />
+                                        <ComboBox layoutX="25.0" layoutY="98.0" prefHeight="31.0" prefWidth="151.0" />
+                                        <ComboBox layoutX="25.0" layoutY="50.0" prefHeight="31.0" prefWidth="322.0" promptText="Selecionar..." />
+                                        <Label layoutX="25.0" layoutY="174.0" prefHeight="36.0" prefWidth="151.0" text="&lt;Devolução" textFill="#2cb1c8">
+                                            <font>
+                                                <Font name="System Bold" size="20.0" />
+                                            </font>
+                                        </Label>
+                                        <DatePicker layoutX="194.0" layoutY="252.0" prefHeight="31.0" prefWidth="151.0" />
+                                        <ComboBox layoutX="25.0" layoutY="252.0" prefHeight="31.0" prefWidth="151.0" />
+                                        <ComboBox layoutX="25.0" layoutY="210.0" prefHeight="31.0" prefWidth="322.0" promptText="Selecionar..." />
+                                        <Button fx:id="ConfirmarEscolha" layoutX="17.0" layoutY="304.0" mnemonicParsing="false" style="-fx-background-color: #2cb1c8;" text="ALTERAR DATA DE DEVOLUÇÃO E RETIRADA" textFill="WHITE">
+                                            <font>
+                                                <Font name="System Bold" size="15.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                        </HBox>
+                        <Label layoutX="998.0" layoutY="382.0" text="-------------------------------------------------------------------------------" textFill="#2cb1c8" />
+                        <HBox layoutX="26.0" layoutY="16.0" prefHeight="652.0" prefWidth="856.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20;">
+                            <children>
+                                <AnchorPane prefHeight="575.0" prefWidth="856.0">
+                                    <children>
+                                        <Label layoutX="72.0" layoutY="36.0" prefHeight="72.0" prefWidth="143.0" text="Seu nome completo">
+                                            <font>
+                                                <Font size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="69.0" layoutY="188.0" text="Seu CPF ou Passaporte:">
+                                            <font>
+                                                <Font size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="66.0" layoutY="251.0" text="Seu telefone:">
+                                            <font>
+                                                <Font size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="72.0" layoutY="122.0" prefHeight="31.0" prefWidth="79.0" text="Seu e-mail:">
+                                            <font>
+                                                <Font size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="66.0" layoutY="376.0" text="Aceito receber ofertas exclusivas e dicas de turismo em Minas Gerais.">
+                                            <font>
+                                                <Font size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="66.0" layoutY="314.0" text="Seu celular:">
+                                            <font>
+                                                <Font size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="65.0" layoutY="454.0" text="Cumpo (opcional):">
+                                            <font>
+                                                <Font size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <Button layoutX="454.0" layoutY="523.0" mnemonicParsing="false" style="-fx-background-color: #2cb1c8;" text="Validar cupom" textFill="WHITE">
+                                            <font>
+                                                <Font name="System Bold" size="12.0" />
+                                            </font>
+                                        </Button>
+                                        <Button layoutX="202.0" layoutY="565.0" mnemonicParsing="false" style="-fx-background-color: #2cb1c8;" text="CONCLUIR SUA RESERVA" textFill="WHITE">
+                                            <font>
+                                                <Font name="System Bold" size="18.0" />
+                                            </font>
+                                        </Button>
+                                        <Label layoutX="52.0" prefHeight="72.0" prefWidth="338.0" text="Preencha seus dados" textFill="#2cb1c8">
+                                            <font>
+                                                <Font name="System Bold" size="24.0" />
+                                            </font>
+                                        </Label>
+                                        <RadioButton layoutX="201.0" layoutY="412.0" mnemonicParsing="false" text="Sim" />
+                                        <RadioButton layoutX="299.0" layoutY="412.0" mnemonicParsing="false" text="Não" />
+                                        <TextField layoutX="73.0" layoutY="84.0" prefHeight="31.0" prefWidth="474.0" />
+                                        <TextField layoutX="73.0" layoutY="146.0" prefHeight="31.0" prefWidth="474.0" />
+                                        <TextField layoutX="73.0" layoutY="213.0" prefHeight="31.0" prefWidth="474.0" />
+                                        <TextField layoutX="73.0" layoutY="276.0" prefHeight="31.0" prefWidth="474.0" />
+                                        <TextField layoutX="73.0" layoutY="339.0" prefHeight="31.0" prefWidth="474.0" />
+                                        <TextField layoutX="73.0" layoutY="479.0" prefHeight="31.0" prefWidth="474.0" />
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                        </HBox>
+                    </children>
+                </AnchorPane>
+
+            </children>
+        </FlowPane>
+
+        <!-- Rodapé dentro do AnchorPane -->
+        <AnchorPane prefHeight="86.0" prefWidth="1415.0" style="-fx-background-color: #2cb1c8;" AnchorPane.bottomAnchor="0.0">
+            <children>
+                <HBox alignment="CENTER" layoutY="35.0" spacing="30.0">
+                    <Button mnemonicParsing="false" style="-fx-background-color: #2cb1c8; -fx-text-fill: white;" text="Sobre nós" />
+                    <Button mnemonicParsing="false" style="-fx-background-color: #2cb1c8; -fx-text-fill: white;" text="Termos e condições" />
+                    <Button mnemonicParsing="false" style="-fx-background-color: #2cb1c8; -fx-text-fill: white;" text="Política de privacidade" />
+                </HBox>
+                <Label layoutX="944.0" layoutY="66.0" text="© 2025 Projeto Locação. Todos os direitos reservados." textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+
+    </children>
+</AnchorPane>
