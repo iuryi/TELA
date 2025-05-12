@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.slocacaov.HelloController">
+    <children>
+        <!-- Banner superior (Tarja verde) -->
+        <HBox alignment="CENTER" layoutY="-6.0" prefHeight="103.0" prefWidth="1280.0" spacing="30.0" style="-fx-background-color: #2cb1c8;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-6.0">
+            <padding>
+                <Insets bottom="10" left="30" right="30" top="10" />
+            </padding>
+            <AnchorPane prefHeight="100.0" prefWidth="1258.0">
+                <children>
+                    <Button layoutX="1092.0" layoutY="29.0" mnemonicParsing="false" text="Fale conosco">
+                        <font>
+                            <Font name="System Bold" size="15.0" />
+                        </font>
+                    </Button>
+                    <Label layoutX="1057.0" layoutY="25.0" prefHeight="40.0" prefWidth="40.0" text="📞">
+                        <font>
+                            <Font size="28.0" />
+                        </font>
+                    </Label>
+
+                    <TextField layoutX="180.0" layoutY="23.0" prefHeight="40.0" prefWidth="322.0" promptText="Procurar Carros 🔍" />
+                    <ImageView fitHeight="73.0" fitWidth="175.0" layoutX="-13.0" layoutY="8.0">
+                        <image>
+                            <Image url="@../../../images/LOGO_AZUL-removebg-preview.png" />
+                        </image>
+                    </ImageView>
+
+                </children>
+            </AnchorPane>
+        </HBox>
+
+        <!-- Conteúdo dos produtos, sem ScrollPane -->
+        <FlowPane hgap="15.0" style="-fx-background-color: #f9f9f9; -fx-padding: 20px;" vgap="15.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="96.0">
+            <children>
+                <!-- Conteúdo dos produtos -->
+                <AnchorPane prefHeight="785.0" prefWidth="1375.0">
+                    <children>
+                        <ImageView fitHeight="739.0" fitWidth="1415.0" layoutX="-21.0" layoutY="-21.0">
+                            <image>
+                                <Image url="@../../../images/bg-steps-new.jpg" />
+                            </image>
+                        </ImageView>
+                        <HBox layoutX="269.0" layoutY="23.0" prefHeight="652.0" prefWidth="856.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20;">
+                     <children>
+                        <AnchorPane prefHeight="652.0" prefWidth="899.0">
+                           <children>
+                                    <HBox layoutX="40.0" layoutY="43.0" prefHeight="383.0" prefWidth="388.0" style="-fx-background-color: #f0f0f0; -fx-background-radius: 20;" styleClass="-fx padding: 10" />
+                                    <Label layoutX="462.0" layoutY="338.0" text="-------------------------------------------------------------------------------" textFill="#2cb1c8" />
+                              <Label layoutX="468.0" layoutY="313.0" text="VALOR:">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                        </HBox>
+                    </children>
+                </AnchorPane>
+
+            </children>
+        </FlowPane>
+
+        <!-- Rodapé dentro do AnchorPane -->
+        <AnchorPane prefHeight="86.0" prefWidth="1415.0" style="-fx-background-color: #2cb1c8;" AnchorPane.bottomAnchor="0.0">
+            <children>
+                <HBox alignment="CENTER" layoutY="35.0" spacing="30.0">
+                    <Button mnemonicParsing="false" style="-fx-background-color: #2cb1c8; -fx-text-fill: white;" text="Sobre nós" />
+                    <Button mnemonicParsing="false" style="-fx-background-color: #2cb1c8; -fx-text-fill: white;" text="Termos e condições" />
+                    <Button mnemonicParsing="false" style="-fx-background-color: #2cb1c8; -fx-text-fill: white;" text="Política de privacidade" />
+                </HBox>
+                <Label layoutX="944.0" layoutY="66.0" text="© 2025 Projeto Locação. Todos os direitos reservados." textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+
+    </children>
+</AnchorPane>
